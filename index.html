@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bento Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">BENTO BLOG</p>
+      <h1>柳一的便当博客</h1>
+      <p class="lede">把想法拆成一个个模块：写作、音乐、日程与灵感。</p>
+    </div>
+    <div class="pill">
+      <span class="dot"></span> 持续更新中
+    </div>
+  </header>
+
+  <main class="bento-grid">
+    <section class="card hero" id="intro" data-source="content/home/intro.md">
+      <div class="card-header">
+        <p class="eyebrow">个人介绍</p>
+        <h2>你好，我是柳一</h2>
+      </div>
+      <div class="card-body" data-module="intro"></div>
+    </section>
+
+    <section class="card music" id="music" data-source="content/home/music.md">
+      <div class="card-header">
+        <p class="eyebrow">音乐</p>
+        <h2>正在播放</h2>
+      </div>
+      <div class="card-body" data-module="music"></div>
+      <div class="player">
+        <div class="track-info">
+          <div class="track-title" id="player-title">Morning Coffee — Lo-Fi</div>
+          <div class="track-meta" id="player-meta">轻量节奏，适合写作</div>
+        </div>
+        <audio id="audio" controls preload="none">
+          <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Delorean_Dynamite/Sunbeam/Delorean_Dynamite_-_03_-_Morning_Coffee.mp3" type="audio/mpeg" />
+          你的浏览器不支持音频播放。
+        </audio>
+        <div class="player-controls">
+          <button id="prev">上一首</button>
+          <button id="next">下一首</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card posts" id="posts" data-source="content/home/posts.md">
+      <div class="card-header">
+        <p class="eyebrow">博文</p>
+        <h2>最新更新</h2>
+      </div>
+      <div class="card-body posts-body">
+        <div class="module-copy" data-module="posts"></div>
+        <div class="posts-layout">
+          <div class="post-list" id="post-list"></div>
+          <div class="post-preview" id="post-preview">
+            <div class="placeholder">从左侧选择一篇文章预览。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card calendar" id="calendar" data-source="content/home/calendar.md">
+      <div class="card-header">
+        <p class="eyebrow">日历 & 日程</p>
+        <h2>节奏管理</h2>
+      </div>
+      <div class="card-body" data-module="calendar"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>用卡片方式生活与创作 · 欢迎通过 PR 更新你的博客内容。</p>
+  </footer>
+
+  <script src="lib/marked-lite.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

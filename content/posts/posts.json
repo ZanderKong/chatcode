@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "bento-writing",
+    "title": "用 Bento 方式写博客：把信息切成小方块",
+    "date": "2024-08-12",
+    "tags": ["design", "blog"],
+    "summary": "为什么用卡片式布局记录想法，以及模块化内容的好处。",
+    "published": true
+  },
+  {
+    "slug": "observability-front-end",
+    "title": "前端可观测性入门：让页面会说话",
+    "date": "2024-07-28",
+    "tags": ["frontend", "observability"],
+    "summary": "从埋点、日志到用户旅程，搭建自己的前端可观测方案。",
+    "published": true
+  },
+  {
+    "slug": "draft-long-run",
+    "title": "长跑与写作：如何在重复中保持节奏",
+    "date": "2024-07-10",
+    "tags": ["life", "running"],
+    "summary": "一份仍在打磨的稿件，用跑步的方式养成写作肌肉。",
+    "published": false
+  }
+]
